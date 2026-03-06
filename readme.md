@@ -4,7 +4,7 @@ Starter template for landing pages based on Vite with Handlebars templates, mult
 
 ### Features
 
-- **Vite + TypeScript**: fast bundling and smooth DX.
+- **Vite**: fast bundling and smooth DX.
 - **Handlebars templates**: partials in `src/templates` and sections in `src/sections` for building pages from reusable blocks.
 - **Multi-page support**: all HTML files in `src` are automatically added as separate entry points.
 - **Automatic WebP conversion**: `sharp`-based script (`scripts/convertToWebp.js`) processes images and generates WebP versions.
