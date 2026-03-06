@@ -8,6 +8,15 @@ import {
   startWatch as startWebpWatch,
 } from './scripts/convertToWebp.js';
 
+/**
+ * Renders <picture> with WebP source and PNG/JPEG fallback.
+ * Usage: {{{picture "/images/photo.png" alt="Description"}}} (triple braces for raw HTML)
+ * Optional hash: alt, class, loading (default "lazy"), width, height, sources (array of objects with media and srcset)
+ *
+ * Example with media queries:
+ * {{{picture "/images/hero.png" alt="Hero" sources=(array (object media="(max-width: 768px)" srcset="/images/hero-mobile.png") (object media="(min-width: 769px)" srcset="/images/hero-desktop.png"))}}}
+ */
+
 function pictureHelper(pathOrSrc, options = {}) {
   const src = typeof pathOrSrc === 'string' ? pathOrSrc : '';
   const hash = options.hash || {};
