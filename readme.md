@@ -1,10 +1,10 @@
 ## Vite Landing Template (Light)
 
-Starter template for landing pages based on Vite with Handlebars templates, multi-page structure, and automatic WebP image conversion.
+Starter template for landing pages based on Vite (JavaScript only, no TypeScript) with Handlebars templates, multi-page structure, and automatic WebP image conversion.
 
 ### Features
 
-- **Vite**: fast bundling and smooth DX.
+- **Vite + JavaScript**: fast bundling and smooth DX, plain JS/ES modules.
 - **Handlebars templates**: partials in `src/templates` and sections in `src/sections` for building pages from reusable blocks.
 - **Multi-page support**: all HTML files in `src` are automatically added as separate entry points.
 - **Automatic WebP conversion**: `sharp`-based script (`scripts/convertToWebp.js`) processes images and generates WebP versions.
@@ -60,9 +60,9 @@ npm run preview
 ### Available npm scripts
 
 - **`npm run dev`**: start Vite dev server.
-- **`npm run build`**: compile TypeScript and build the project with Vite into `dist`.
+- **`npm run build`**: build the project with Vite into `dist`.
 - **`npm run preview`**: run a local server to preview the built app.
-- **`npm run lint`**: run ESLint for `.ts` files.
+- **`npm run lint`**: run ESLint for `.js` files.
 - **`npm run webp`**: one-off WebP conversion via `scripts/convertToWebp.js`.
 - **`npm run webp:watch`**: watch mode for images, automatically converts on changes.
 
